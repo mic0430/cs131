@@ -1,0 +1,55 @@
+    1  passwd
+    2  exit
+    3  ls
+    4  mkdir cs131
+    5  ls
+    6  cd cs131
+    7  mkdir a1
+    8  cd a1
+    9  echo "hi"
+   10  echo $SHELL
+   11  echo home
+   12  echo $HOME
+   13  id
+   14  uid
+   15  michaelsu24 uid
+   16  id
+   17  ls
+   18  ls /etc/
+   19  ls /proc/
+   20  ls /proc/meminfo
+   21* 
+   22  ls /proc/pcuinfo
+   23  cat /proc/cpuinfo
+   24  head -n 1 /proc/meminfo
+   25  head -n 5 /proc/meminfo
+   26  head -n 5 /proc/cpuinfo
+   27  grep "MHz" /proc/cpuinfo | tail -n 1
+   28  ls /etc/
+   29  cat /etc/os-release
+   30  cp /datasets/taxidata.tar.gz .
+   31  ls
+   32  tar -xzvf taxidata.tar.gz
+   33  ls
+   34  cd ..
+   35  git init
+   36  git remote add origingit@github.com:mic0430/cs131.git
+   37  git remote rm
+   38  git remote rm origin
+   39  git remote add origin https://github.com/mic0430/cs131.git
+   40  git config --global user.email "chulaphang.25@gmail.com"
+   41  git config --global user.name "michael"
+   42  cd a1
+   43  history > cmds.log
+   44  ls
+   45  git add.
+   46  git add .
+   47  git add cmds.log
+   48  git commit -m "first commit" -a
+   49  git push -u origin master
+   50  grep '2019-05-12' 2019-05.csv | awk -F',' 'NR > 1 {sum+=$17; count++} END {print sum/count}'
+   51  cd taxidata
+   52  grep '2019-05-12' 2019-05.csv | awk -F',' 'NR > 1 {sum+=$17; count++} END {print sum/count}'
+   53  grep '2019-05-12' 2019-05.csv | awk -F',' 'NR > 1 {print $17}' | sort -nr | head -n 1
+   54  grep '2019-05-' 2019-05.csv | cut -d',' -f5,12 | grep -E '^.*,3|4|5|6|7|8|9' | cut -d',' -f2 | sort | uniq -c | sort -nr | head -10
+   55  history > cmds.log
