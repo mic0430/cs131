@@ -1,32 +1,1990 @@
-    1  passwd
-    2  exit
-    3  ls
-    4  mkdir cs131
-    5  ls
-    6  cd cs131
-    7  mkdir a1
-    8  cd a1
-    9  echo "hi"
-   10  echo $SHELL
-   11  echo home
-   12  echo $HOME
-   13  id
-   14  uid
-   15  michaelsu24 uid
-   16  id
-   17  ls
-   18  ls /etc/
-   19  ls /proc/
-   20  ls /proc/meminfo
-   21* 
-   22  ls /proc/pcuinfo
-   23  cat /proc/cpuinfo
-   24  head -n 1 /proc/meminfo
-   25  head -n 5 /proc/meminfo
+Last login: Sat Jun 15 16:55:39 on ttys000
+
+The default interactive shell is now zsh.
+To update your account to use zsh, please run `chsh -s /bin/zsh`.
+For more details, please visit https://support.apple.com/kb/HT208050.
+MacBook-Pro-2:~ michael$ ssh michaelsu24@172.20.25.9
+michaelsu24@172.20.25.9's password: 
+Activate the web console with: systemctl enable --now cockpit.socket
+
+Register this system with Red Hat Insights: insights-client --register
+Create an account or view all your systems at https://red.ht/insights-dashboard
+Last login: Tue Jun  4 23:27:26 2024 from 172.29.97.136
+[michaelsu24@sjsu ~]$ client_loop: send disconnect: Broken pipe
+MacBook-Pro-2:~ michael$ ssh michaelsu24@172.20.25.9
+michaelsu24@172.20.25.9's password: 
+Activate the web console with: systemctl enable --now cockpit.socket
+
+Register this system with Red Hat Insights: insights-client --register
+Create an account or view all your systems at https://red.ht/insights-dashboard
+Last login: Sat Jun 15 19:59:23 2024 from 172.29.97.200
+[michaelsu24@sjsu ~]$ ls
+[michaelsu24@sjsu ~]$ mkdir cs131
+[michaelsu24@sjsu ~]$ ls
+cs131
+[michaelsu24@sjsu ~]$ cd cs131
+[michaelsu24@sjsu cs131]$ mkdir a1
+[michaelsu24@sjsu cs131]$ cd a1
+[michaelsu24@sjsu a1]$ echo "hi"
+hi
+[michaelsu24@sjsu a1]$ echo $SHELL
+/bin/bash
+[michaelsu24@sjsu a1]$ echo home
+home
+[michaelsu24@sjsu a1]$ echo $HOME
+/mnt/scratch/michaelsu24
+[michaelsu24@sjsu a1]$ id
+uid=1248(michaelsu24) gid=1249(michaelsu24) groups=1249(michaelsu24)
+[michaelsu24@sjsu a1]$ uid
+-bash: uid: command not found
+[michaelsu24@sjsu a1]$ michaelsu24 uid
+-bash: michaelsu24: command not found
+[michaelsu24@sjsu a1]$ id
+uid=1248(michaelsu24) gid=1249(michaelsu24) groups=1249(michaelsu24)
+[michaelsu24@sjsu a1]$ ls
+[michaelsu24@sjsu a1]$ ls /etc/
+adjtime                           exports          ld.so.conf.d              pam.d             shells
+aliases                           favicon.png      libaudit.conf             papersize         skel
+alternatives                      filesystems      libblockdev               passwd            smartmontools
+anacrontab                        firewalld        libibverbs.d              passwd-           sos
+asciidoc                          fonts            libnl                     pinforc           ssh
+at.deny                           fprintd.conf     libpaper.d                pkcs11            ssl
+audit                             fstab            libreport                 pki               sssd
+authselect                        fuse.conf        libssh                    plymouth          subgid
+bash_completion.d                 gcrypt           libuser.conf              pm                subgid-
+bashrc                            gdbinit          locale.conf               polkit-1          subuid
+bindresvport.blacklist            gdbinit.d        localtime                 popt.d            subuid-
+bindresvport.blacklist.rsct.save  glvnd            login.defs                ppc64-diag        sudo.conf
+binfmt.d                          gnupg            logrotate.conf            printcap          sudoers
+chkconfig.d                       GREP_COLORS      logrotate.d               profile           sudoers.d
+chrony.conf                       groff            lsm                       profile.d         sudo-ldap.conf
+chrony.keys                       group            lsvpd                     protocols         swid
+cifs-utils                        group-           lvm                       rc0.d             sysconfig
+cloud                             grub2.cfg        machine-id                rc1.d             sysctl.conf
+cni                               grub.d           magic                     rc2.d             sysctl.d
+cockpit                           gshadow          mailcap                   rc3.d             systemd
+containers                        gshadow-         makedumpfile.conf.sample  rc4.d             system-release
+cron.d                            gss              man_db.conf               rc5.d             system-release-cpe
+cron.daily                        host.conf        mime.types                rc6.d             tcsd.conf
+cron.deny                         hostname         mke2fs.conf               rc.d              terminfo
+cron.hourly                       hosts            modprobe.d                rc.local          tmpfiles.d
+cron.monthly                      idmapd.conf      modules-load.d            rc.powerfail      trusted-key.key
+crontab                           init.d           motd                      redhat-release    tuned
+cron.weekly                       inittab          motd.d                    request-key.conf  udev
+crypto-policies                   inputrc          mtab                      request-key.d     udisks2
+crypttab                          insights-client  multipath                 resolv.conf       unbound
+csh.cshrc                         iproute2         multipath.conf            rhc               updatedb.conf
+csh.login                         iscsi            nanorc                    rhsm              usb_modeswitch.conf
+ct_node_id                        issue            netconfig                 rpc               vconsole.conf
+dbus-1                            issue.d          NetworkManager            rpm               vimrc
+dconf                             issue.net        networks                  rsyslog.conf      virc
+default                           java             nftables                  rsyslog.d         wgetrc
+depmod.d                          jvm              nsswitch.conf             rwtab.d           X11
+dhcp                              jvm-commmon      nsswitch.conf.bak         samba             xattr.conf
+DIR_COLORS                        kdump            nvme                      sasl2             xdg
+DIR_COLORS.256color               kdump.conf       objrepos                  security          xinetd.d
+DIR_COLORS.lightbgcolor           kernel           oddjob                    selinux           xml
+dnf                               keyutils         oddjobd.conf              services          yum
+dracut.conf                       krb5.conf        oddjobd.conf.d            sestatus.conf     yum.conf
+dracut.conf.d                     krb5.conf.d      openldap                  setroubleshoot    yum.repos.d
+egl                               kshrc            opt                       sgml
+environment                       ld.so.cache      os-release                shadow
+ethertypes                        ld.so.conf       PackageKit                shadow-
+[michaelsu24@sjsu a1]$ ls /proc/
+1        11305    1298     1499     218      2829     3577039  3668364  3688516  3693387  458     654     859
+10       11306    1299     15       2180     283      358      3668370  3688532  3693388  459     655     86
+100      11307    13       150      2181     2830     3581188  3668372  3688752  3693389  46      656     860
+1001     11308    130      1500     2182     2832     3582005  3668909  3688811  3693475  461     657     86087
+1002     1131     1301     1501     2189     2833     3583717  3668916  3689004  3693491  462     658401  86088
+1003     11310    13012    1502     2192     2834     3583718  3668917  3689013  3693591  463     659     861
+1004     11316    13015    1503     2193     284      3585407  3668933  3689069  3693598  464     66      863
+1005     11317    1302     1505     2194     2853819  3585468  3668936  3689250  3693602  4646    660     864
+1007     11318    1303     1506     2195     286      3585492  3669396  3689255  3693604  465     661     865
+1008     11323    1304     1507     2196     2865     3587157  3669764  3689257  3693605  467     662     866
+1009     11324    1305     1508     2197     287      3587160  367      3689269  3693648  468     663     867
+101      11329    1307     1509     2198     288      3588298  3670621  3689272  3693656  469     665     869
+1010     1133     13070    151      2199     289      3588857  3671505  3689276  3693657  47      666     870
+1011     11330    1308     1511     22       29       3588983  3671801  3689282  3693664  470     667     871
+1013     11337    1309     1512     220      290      359      3671809  3689283  3693665  471     668     872
+1014     11338    13096    1513     2201     2903225  3595862  3671820  3689295  3693670  473     669     873
+1015     11339    131      1514     2202     2909     3596185  3672340  3689298  3693697  474     67      875
+1016     1134     1310     1515     22036    292      3597570  3672357  3689303  3693699  475     671     876
+1017     11340    1311     1517     2205     293      3598875  3672362  3689315  3693705  4752    672     877
+1019     11343    1313     1518     2207     2936349  3599836  3672436  3689320  3693709  476     673     878
+102      11348    1314     1519     221      294      36       3672976  3689321  3693807  477     674     879
+1020     1135     1315     152      2217     295      360      3674028  3689322  3693897  479     675     88
+1021     11350    1316     1520     222      2951     3600147  3674034  3689324  3693898  48      677     881
+1022     1136     1317     1521     2220     296      3600984  3674061  3689342  3693902  480     678     882
+1023     11363    1319     1523     2221     298      3601072  3674066  3689356  3693928  481     679     883
+1025     1137     132      1524     2223     299      3601089  3674079  3689369  3693949  4814    68      884
+1026     11370    1320     1525     2225     2998     3601988  3674106  3689370  3693976  4818    680     885
+1027     11371    1321     1526     2225812  3        3602897  3674114  3689372  3693977  482     681     887
+1028     1139     1322     1527     2225814  30       3604024  3674120  3689374  3693981  483     683     888
+1029     114      1323     1529     2227     300      3604549  3674141  3689387  3693986  485     684     889
+103      1140     1325     1530     2227732  3002     3606219  3674160  3689645  3693989  486     685     89
+1031     1141     1326     1531     2227733  3003457  3606273  3674677  3689653  3693990  4868    686     890
+1032     1142     1327     1532     2228     301      3606307  3674737  3689837  3694053  487     687     891
+1033     1143     1328     1533     223      302      3606326  3674961  3689861  3694178  488     689     893
+1034     1145     1329     1535     2233     304      3607038  3675804  3689925  3694232  489     690     894
+1035     1146     133      1536     2234     305      3607039  3675854  3689931  3694247  49      691     895
+1037     1147     1331     1537     2238     306      3607931  3675915  3689932  3694267  491     692     896
+1038     11475    1332     1538     2238378  307      3607932  3675931  3690145  3694269  492     693     897
+1039     1148     1333     1539     2238380  308      3607986  3675932  3690211  3694304  493     695     899
+104      114869   1334     154      224      31       3607991  3676201  3690212  3694314  494     696     9
+1040     1149     1335     1541     2247     310      3608986  3676409  3690217  3694333  495     697     90
+1041     115      1337     1542     2248654  311      361      3676447  3690218  3694369  497     698     900
+1043     1151     1338     1543     2248656  312      3610232  3676458  3690225  3694373  498     699     901
+1044     115186   1339     1544     2248991  313      3610246  3676742  3690250  3694380  499     70      902
+104444   1152     134      1545     2249972  314      3610248  3677007  3690252  3694431  50      701     903
+1045     1153     1340     1547     2250     316      3610254  3677020  3690258  3694432  500     702     905
+1046     1154     1341     1548     2250115  3162295  3610257  3677021  3690260  3694433  501     703     906
+1047     1155     1343     1549     2251135  3167570  3610598  3677508  3690440  3694434  503     704     907
+1049     115664   13439    155      2251347  3168682  3610882  3677562  3690513  3694435  504     705     908
+1050     1157     1344     1552     226      3169349  3611390  3677592  3690519  3694436  505     707     909
+1051     115717   1345     1555     227      317      3611472  3677595  3690520  3694437  506     708     91
+1052     1158     1346     1558     2271     318      3611473  3677601  3690532  3694438  507     709     911
+1053     1159     1347     1559     2272     319      3611487  3677603  3690533  3694439  509     71      912
+105350   115919   1349     156      2273     3196044  3611769  3677605  3690538  3694440  510     710     913
+105351   115985   1350     1560     2274     3196099  3612320  3677607  3690736  3694441  511     711     914
+1055     116      1351     1561     2275     32       3613747  3677618  3690810  3694442  512     713     915
+1056     1160     1352     1562     2276     320      3614794  3677621  3690857  3694443  513     714     917
+1057     11609    1353     1564     2277     3205297  3614886  3677622  3690948  3694444  515     715     918
+1058     1161     1355     1565     2278     322      3615179  3677633  3690950  3694448  516     715119  919
+105881   1163     1356     1566     2279     323      3615180  3677636  3690989  3694449  517     716     92
+105883   1164     1357     1567     228      3239075  3615445  3677644  3690992  3694450  518     717     920
+1059     1165     1358     1568     2282     324      3616368  3677651  3690995  3694452  519     718838  921
+106      1166     1359     1569     2286     325      3616486  3677652  3690997  3694458  52      719     923
+10609    1167     136      157      2288542  3258257  3616493  3677833  3691012  3694459  521     72      923625
+1061     1169     1361     1570     2288558  326      3616543  3677855  3691013  3694460  522     720     923627
+1062     1170     1362     1571     229      3265470  3616560  3677923  3691014  3694461  523     721     924
+1063     117068   1363     1572     23       3265678  3616825  3678013  3691016  3694462  524     722     925
+106343   1171     1364     1573     230      3272580  3616836  3678700  3691020  3694463  525     723     926
+106344   1172     1365     1577     2309     328      3616837  3679058  3691023  3694465  527     725     927
+1064     1173     1367     1579     2310     329      3617672  3679205  3691044  3694480  528     726     929
+1065     1175     1368     158      2319     3299843  3618209  3679229  3691092  3694481  529     727     930
+1066102  1176     1369     1580     232      330      3618211  3679232  3691093  3694482  53      727679  931
+1066103  1177     137      16       2320     3304023  3618300  3679235  3691126  3694485  530     727918  932
+1067     1178     1370     160      2321     3304025  3619981  3679285  3691132  3694513  531     728     933
+1068     1179     1371     161      2322     331      3619999  3679351  3691135  3694518  533     728104  935
+1068959  118      1373     162      2324     3312757  362      3679807  3691136  3694520  534     729     936
+1069     1181     1374     163      233      3312759  3620018  3679833  3691145  3694523  535     73      937
+107      1182     1375     164      2332     3317823  3620019  368      3691147  3694524  536     731     9375
+1070     1183     1376     166      2333     3318005  3620102  3680151  3691149  3694528  537     732     938
+1070098  1184     1377     167      234      332      3620300  3680173  3691152  3694535  539     733     939
+1071     1185     1379     168      2345     3327539  3621     3680620  3691157  3694536  54      734     94
+1073     1187     138      16812    2346     3337     3621643  3680635  3691159  3694537  540     735     941
+1074     1188     1380     1683     235      3338     3621652  3680652  3691164  3694538  541     737     942
+1075     1189     1381     1684     236      334      3621718  3680732  3691167  3694539  542     738     943
+107518   119      13818    1685     2361     3346     3621726  3680838  3691348  3694580  543     739     944
+1076     1190     1382     1686     2368     3348736  3621736  3680879  3691349  3694614  545     74      945
+1077     1191     1383     1689     2379540  335      3622     3680908  3691441  3694620  546     740     947
+1079     119234   13839    169      2379542  3350462  3623392  3680910  3691442  3694621  547     741     948
+108      1192810  1385     1690     238      3355698  3623407  3680932  3691445  37       548     743     949
+1080     1193     1386     1691     2380563  33565    3623989  3680951  3691448  370      549     744     95
+1081     1194     1387     17       2389593  336      3624     3680973  3691603  3706     55      745     950
+1081952  1195     1388     170      2389893  3362     3626     3680977  3691659  3709     551     746     951
+1082     119542   1389     172      239      3363     3626772  3680989  3691660  371      552     747     953
+1082089  1196     139      173      2390464  337      3626805  3680993  3691715  3711     553     7487    954
+1083     1197     1391     174      2393919  3376     3627     3681     3691922  3712     554     749     955
+108414   1199     1392     175      24       3379     3627338  3681010  3691926  3713     555     750     956
+1085     12       1393     176      240      338      3630057  3681267  3691933  3714     557     751     957
+1086     120      1394     178      241      3383     3630059  3681511  3691934  3716     558     752     958225
+1087     1200     1395     179      24175    3397     3630060  3681567  3691986  3718     559     753     959
+1088     1201     1397     18       242      3397010  3630065  3681835  3691989  372      56      755     96
+1089     1202     1398     180      2422345  3397012  3631727  3682053  3691990  373      560     756     960
+109      1203     1399     1800     2422347  34       3631758  3682058  3692152  374      561     757     961
+1091     1205     14       1802766  244      340      3631767  3682098  3692200  3746     5612    758     962
+1092     1206     140      1803804  2447153  3401040  3631768  3682112  3692248  376      563     759     963
+1093     1207     1400     181      245      3401308  3632650  3682113  3692251  3763     564     76      965
+1094     12076    14008    182      246      3407     3632659  3682215  3692252  377      565     761     966
+1095     1208     1401     184      247      3408     3632662  3682471  3692253  3772     566     762     967
+1097     1209     1403     1847105  2471     3409962  3633     3682499  3692254  3773     567     763     968
+1098     121      1404     1847107  2472     341      3634     3682500  3692255  3774     569     764     969
+1099     1211     1405     185      2475     3412449  3634011  3682515  3692259  378      570     765     97
+11       1212     1406     186      2478     3413286  3635103  3682577  3692271  379      571     767     971
+110      1213     1407     187      248      34140    3637705  3682626  3692452  38       572     768     972
+1100     12135    1409     1871066  2486     342      3637708  3682628  3692498  380      573     769     973
+1101     1214     1410     1871067  2487     34214    3638450  3682638  3692502  3808     575     77      974
+1103     12148    1411     1874147  2488     3424     3638955  3682639  3692519  382      5756    770     975
+1104     12149    1412     188      2492008  3425     364      3682690  3692526  3825656  576     771     977
+11049    1215     1413     19       2492010  343      3640743  3682983  3692533  3827628  577     773     978
+1105     12150    1415     190      2492433  3432632  3641763  3682984  3692580  3827631  578     774     979
+1106     1217     1416     191      2493222  3433756  3642104  3683     3692598  383      579     775     98
+1107     1218     1417     192      2495     3433758  3642395  3683090  3692661  384      58      776     980
+11070    1219     1418     193      2496     3434     3642650  3683255  3692662  3840871  581     777     981
+11071    122      1419     194      2497     344      3643431  3683757  3692703  385      582     779     983
+11079    1220     142      196      2498     3445014  3643784  3683808  3692704  3854249  583     78      984
+1109     1221     1421     1964     25       3445015  3645983  3683809  3692711  3854251  584     780     985
+1110     1222088  1422     197      250      3445089  3646847  3684284  3692712  3855465  585     781     986
+1111     1223     1423     198      2500     3448345  3647137  3684288  3692713  386      587     782     987
+1112     1224     1424     199      2501     3452     3647698  3684291  3692714  3874292  588     783     989
+11123    1225     1425     1991     2502     3453924  3647700  3684311  3692718  388      589     785     990
+11124    1226     1425436  1992     2503     3454     3648522  3684345  3692726  389      59      786     991
+11125    1227     1425438  1994     2504     346      3648594  3684351  3692728  390      590     787     992
+11126    1229     1427     1996     2505     3466774  365      3684356  3692729  391      591     788     993
+1113     1230     1428     1999     2506     347      3650210  3684366  3692730  392      593     789     995
+11134    1231     1429     2        2507     3473570  3651979  3684368  3692731  394      594     79      996
+11148    1232     143      20       2508     348      3651988  3684371  3692732  395      595     791     997
+1115     1233     1430     200      251      3480     3652029  3684379  3692733  396      596     792     998
+11150    1235     1431     2001460  2510     349      3652054  3684391  3692734  397      597     793     999
+11153    1236     1433     2001462  2511     3492099  3652055  3684393  3692735  398      599     794     buddyinfo
+11155    1237     1434     2002     2512     3497159  3652056  3684394  3692739  4        6       795     bus
+1116     1238     1435     2003     2513     35       3652064  3684396  3692740  40       60      797     cgroups
+11166    1239     1436     2007     2514     350      3652903  3684406  3692741  400      600     798     cmdline
+1117     124      1437     2008248  2515     3505659  3653685  3684588  3692742  402      601     799     consoles
+11177    1241     1439     2009     252      3505684  3653797  3684676  3692744  403      602     8       cpuinfo
+1118     1242     144      2010     253      3510842  3654914  3684680  3692745  404      603     80      crypto
+11181    1243     1440     2011586  2531     3510855  3654934  3684761  3692747  405      605     800     devices
+1119     1244     1441     2012     254      3512542  3655442  3684887  3692752  407      606     801     device-tree
+112      1245     1442     2016     256      3514347  3655489  3684889  3692753  408      606325  803     diskstats
+11201    1247     1443     2018     2565     3517557  3655495  3684894  3692754  409      607     804     dma
+11202    1248     1445     202      257      3517734  3655763  3684895  3692756  41       607017  805     driver
+11206    1249     1446     2025     258      352      3656614  3684957  3692758  410      607087  806     execdomains
+1121     125      1447     2028     259      3521316  3657062  3685220  3692759  411      608     807     fb
+11211    1250     1448     203      2598     3526681  3657107  3685221  3692760  413      609     809     filesystems
+112154   1250743  1449     2030     26       353      3657164  3685484  3692761  4137     61      810     fs
+1122     1251     145      2032     260      3531101  3658319  3685750  3692762  414      611     811     interrupts
+11228    1253     1451     2033     262      3535627  3658570  3685900  3692763  4143     612     812     iomem
+1123     1254     1452     2035     2629     3536108  3658770  3685948  3692764  4147     613     813     ioports
+11230    1255     1453     2037     263      3536173  3658780  3685964  3692765  415      614     815     irq
+11231    1256     1454     2038     2632     3537700  3658784  3685969  3692766  416      615     816     kallsyms
+11232    1257     1455     204      2637     354      3658794  3685982  3692767  417      6160    817     kcore
+11234    1259     1457     2040     264      3541     3658912  3685996  3692769  4173     617     818     keys
+11235    126      1458     2041     2645     3542908  3659752  3686021  3692770  419      617055  819     key-users
+11238    1260     1459     2044     265      3544071  366      3686022  3692778  42       618     82      kmsg
+1124     1261     146      2045     266      3544072  3660     3686035  3692789  420      619     821     kpagecgroup
+11240    1262     1460     2046     26673    3546247  3660483  3686045  3692796  421      62      822     kpagecount
+11241    1263     1461     205      26731    3548016  3660553  3686050  3692801  422      620     823     kpageflags
+11242    1265     1463     2056     268      3549     3660555  3686052  3692802  423      621     824     loadavg
+11248    1266     1464     2057     269      3549688  3660560  3686226  3692803  425      623     825     locks
+11249    1267     1465     2059     2692     3549714  3660567  3686269  3692804  426      624     827     mdstat
+1125     1268     1466     206      26926    355      3660578  3686315  3692805  427      625     828     meminfo
+11256    1269     1467     2060     2696     3550     3660583  3686316  3692815  428      626     829     misc
+112583   127      1469     2060795  270      3550249  3661     3686326  3692816  429      626486  83      modules
+11259    1271     1470     2060797  271      3551     3661031  3686595  3692819  43       626542  830     mounts
+11260    1272     1471     2065462  2714363  3551215  3661677  3686829  3692826  431      627     831     net
+11266    1273     1472     2073814  2714366  3551264  3661690  3686831  3692827  432      629     833     pagetypeinfo
+11267    1274     1473     2073816  272      3551349  3662201  3686884  3692834  433      630     834     partitions
+11268    1275     1475     2079027  274      3551361  3662230  3686893  3692840  434      631     835     powerpc
+1127     12764    1476     208      275      3552     3662799  3687653  3692842  435      632     836     ppc64
+11271    12765    1477     209      276      3553     3663748  3687659  3692843  437      633     837     rtas
+11274    1277     1478     210      277      3554     3663785  3687662  3692844  438      635     839     sched_debug
+11275    1278     1479     211      278      3554659  3663824  3687664  3693032  439      636     84      schedstat
+11276    1279     148      212      2795     3555     3663873  3687705  3693033  44       637     840     scsi
+11279    128      1481     2132     28       3556     3663874  3687710  3693047  440      638     841     self
+1128     1280     1482     2134     280      3557     3665501  3687918  3693057  441      639     842     slabinfo
+11280    1281     1483     2135     2804     3558     3665534  3687919  3693058  443      64      843     softirqs
+11281    1283     1484     2137     2808486  3559     3665577  3687920  3693104  444      641     845     stat
+11285    1284     1485     2138     2808488  356      3665592  3687957  3693110  445      642     846     swaps
+11286    1285     1487     214      281      3560     3666167  3687976  3693113  446      643     847     sys
+11287    1286     1488     215      2818040  3560643  3666431  3688160  3693114  447      644     848     sysrq-trigger
+11289    1287     1489     2157     2818260  3561     3666729  3688182  3693117  4484     6441    849     sysvipc
+1129     1289     149      2158     2818726  3562     3667208  3688188  3693299  449      645     85      thread-self
+11292    1290     1490     216      2818727  3562136  3667243  3688194  3693300  450      647     851     timer_list
+11296    1291     1491     2169     282      3563     3667248  3688235  3693301  451      648     852     tty
+11297    1292     1493     217      2824     3569     3667274  3688236  3693304  452      649     853     uptime
+113      1293     1494     2171     2825     3569483  3667275  3688250  3693330  453      65      854     version
+1130     1295     1495     2172     2826     3569601  3667539  3688251  3693382  455      650     855     vmallocinfo
+11302    1296     1496     2174     2827     3569761  3668090  3688424  3693383  456      651     857     vmstat
+11304    1297     1497     2175     2828     3576961  3668360  3688469  3693386  457      653     858     zoneinfo
+[michaelsu24@sjsu a1]$ ls /proc/meminfo
+/proc/meminfo
+[michaelsu24@sjsu a1]$ cat /proc/meminfo
+MemTotal:       73080640 kB
+MemFree:        20652480 kB
+MemAvailable:   45734144 kB
+Buffers:          609792 kB
+Cached:         27271872 kB
+SwapCached:            0 kB
+Active:         11429824 kB
+Inactive:       20028480 kB
+Active(anon):    2525824 kB
+Inactive(anon):  4781248 kB
+Active(file):    8904000 kB
+Inactive(file): 15247232 kB
+Unevictable:      156288 kB
+Mlocked:          156288 kB
+SwapTotal:       4218816 kB
+SwapFree:        4218816 kB
+Dirty:                 0 kB
+Writeback:           128 kB
+AnonPages:       3737856 kB
+Mapped:          2074752 kB
+Shmem:           3676864 kB
+KReclaimable:    3081536 kB
+Slab:           12411520 kB
+SReclaimable:    3081536 kB
+SUnreclaim:      9329984 kB
+KernelStack:       46288 kB
+PageTables:        30784 kB
+NFS_Unstable:          0 kB
+Bounce:                0 kB
+WritebackTmp:          0 kB
+CommitLimit:    40759104 kB
+Committed_AS:   10815808 kB
+VmallocTotal:   541165879296 kB
+VmallocUsed:           0 kB
+VmallocChunk:          0 kB
+Percpu:          5734400 kB
+HardwareCorrupted:     0 kB
+AnonHugePages:         0 kB
+ShmemHugePages:        0 kB
+ShmemPmdMapped:        0 kB
+FileHugePages:         0 kB
+FilePmdMapped:         0 kB
+CmaTotal:              0 kB
+CmaFree:               0 kB
+HugePages_Total:       0
+HugePages_Free:        0
+HugePages_Rsvd:        0
+HugePages_Surp:        0
+Hugepagesize:      16384 kB
+Hugetlb:               0 kB
+[michaelsu24@sjsu a1]$ ls /proc/pcuinfo
+ls: cannot access '/proc/pcuinfo': No such file or directory
+[michaelsu24@sjsu a1]$ cat /proc/cpuinfo
+processor	: 0
+cpu		: POWER8 (architected), altivec supported
+clock		: 3425.000000MHz
+revision	: 2.1 (pvr 004b 0201)
+
+processor	: 1
+cpu		: POWER8 (architected), altivec supported
+clock		: 3425.000000MHz
+revision	: 2.1 (pvr 004b 0201)
+
+processor	: 2
+cpu		: POWER8 (architected), altivec supported
+clock		: 3425.000000MHz
+revision	: 2.1 (pvr 004b 0201)
+
+processor	: 3
+cpu		: POWER8 (architected), altivec supported
+clock		: 3425.000000MHz
+revision	: 2.1 (pvr 004b 0201)
+
+processor	: 4
+cpu		: POWER8 (architected), altivec supported
+clock		: 3425.000000MHz
+revision	: 2.1 (pvr 004b 0201)
+
+processor	: 5
+cpu		: POWER8 (architected), altivec supported
+clock		: 3425.000000MHz
+revision	: 2.1 (pvr 004b 0201)
+
+processor	: 6
+cpu		: POWER8 (architected), altivec supported
+clock		: 3425.000000MHz
+revision	: 2.1 (pvr 004b 0201)
+
+processor	: 7
+cpu		: POWER8 (architected), altivec supported
+clock		: 3425.000000MHz
+revision	: 2.1 (pvr 004b 0201)
+
+processor	: 8
+cpu		: POWER8 (architected), altivec supported
+clock		: 3425.000000MHz
+revision	: 2.1 (pvr 004b 0201)
+
+processor	: 9
+cpu		: POWER8 (architected), altivec supported
+clock		: 3425.000000MHz
+revision	: 2.1 (pvr 004b 0201)
+
+processor	: 10
+cpu		: POWER8 (architected), altivec supported
+clock		: 3425.000000MHz
+revision	: 2.1 (pvr 004b 0201)
+
+processor	: 11
+cpu		: POWER8 (architected), altivec supported
+clock		: 3425.000000MHz
+revision	: 2.1 (pvr 004b 0201)
+
+processor	: 12
+cpu		: POWER8 (architected), altivec supported
+clock		: 3425.000000MHz
+revision	: 2.1 (pvr 004b 0201)
+
+processor	: 13
+cpu		: POWER8 (architected), altivec supported
+clock		: 3425.000000MHz
+revision	: 2.1 (pvr 004b 0201)
+
+processor	: 14
+cpu		: POWER8 (architected), altivec supported
+clock		: 3425.000000MHz
+revision	: 2.1 (pvr 004b 0201)
+
+processor	: 15
+cpu		: POWER8 (architected), altivec supported
+clock		: 3425.000000MHz
+revision	: 2.1 (pvr 004b 0201)
+
+processor	: 16
+cpu		: POWER8 (architected), altivec supported
+clock		: 3425.000000MHz
+revision	: 2.1 (pvr 004b 0201)
+
+processor	: 17
+cpu		: POWER8 (architected), altivec supported
+clock		: 3425.000000MHz
+revision	: 2.1 (pvr 004b 0201)
+
+processor	: 18
+cpu		: POWER8 (architected), altivec supported
+clock		: 3425.000000MHz
+revision	: 2.1 (pvr 004b 0201)
+
+processor	: 19
+cpu		: POWER8 (architected), altivec supported
+clock		: 3425.000000MHz
+revision	: 2.1 (pvr 004b 0201)
+
+processor	: 20
+cpu		: POWER8 (architected), altivec supported
+clock		: 3425.000000MHz
+revision	: 2.1 (pvr 004b 0201)
+
+processor	: 21
+cpu		: POWER8 (architected), altivec supported
+clock		: 3425.000000MHz
+revision	: 2.1 (pvr 004b 0201)
+
+processor	: 22
+cpu		: POWER8 (architected), altivec supported
+clock		: 3425.000000MHz
+revision	: 2.1 (pvr 004b 0201)
+
+processor	: 23
+cpu		: POWER8 (architected), altivec supported
+clock		: 3425.000000MHz
+revision	: 2.1 (pvr 004b 0201)
+
+processor	: 24
+cpu		: POWER8 (architected), altivec supported
+clock		: 3425.000000MHz
+revision	: 2.1 (pvr 004b 0201)
+
+processor	: 25
+cpu		: POWER8 (architected), altivec supported
+clock		: 3425.000000MHz
+revision	: 2.1 (pvr 004b 0201)
+
+processor	: 26
+cpu		: POWER8 (architected), altivec supported
+clock		: 3425.000000MHz
+revision	: 2.1 (pvr 004b 0201)
+
+processor	: 27
+cpu		: POWER8 (architected), altivec supported
+clock		: 3425.000000MHz
+revision	: 2.1 (pvr 004b 0201)
+
+processor	: 28
+cpu		: POWER8 (architected), altivec supported
+clock		: 3425.000000MHz
+revision	: 2.1 (pvr 004b 0201)
+
+processor	: 29
+cpu		: POWER8 (architected), altivec supported
+clock		: 3425.000000MHz
+revision	: 2.1 (pvr 004b 0201)
+
+processor	: 30
+cpu		: POWER8 (architected), altivec supported
+clock		: 3425.000000MHz
+revision	: 2.1 (pvr 004b 0201)
+
+processor	: 31
+cpu		: POWER8 (architected), altivec supported
+clock		: 3425.000000MHz
+revision	: 2.1 (pvr 004b 0201)
+
+processor	: 32
+cpu		: POWER8 (architected), altivec supported
+clock		: 3425.000000MHz
+revision	: 2.1 (pvr 004b 0201)
+
+processor	: 33
+cpu		: POWER8 (architected), altivec supported
+clock		: 3425.000000MHz
+revision	: 2.1 (pvr 004b 0201)
+
+processor	: 34
+cpu		: POWER8 (architected), altivec supported
+clock		: 3425.000000MHz
+revision	: 2.1 (pvr 004b 0201)
+
+processor	: 35
+cpu		: POWER8 (architected), altivec supported
+clock		: 3425.000000MHz
+revision	: 2.1 (pvr 004b 0201)
+
+processor	: 36
+cpu		: POWER8 (architected), altivec supported
+clock		: 3425.000000MHz
+revision	: 2.1 (pvr 004b 0201)
+
+processor	: 37
+cpu		: POWER8 (architected), altivec supported
+clock		: 3425.000000MHz
+revision	: 2.1 (pvr 004b 0201)
+
+processor	: 38
+cpu		: POWER8 (architected), altivec supported
+clock		: 3425.000000MHz
+revision	: 2.1 (pvr 004b 0201)
+
+processor	: 39
+cpu		: POWER8 (architected), altivec supported
+clock		: 3425.000000MHz
+revision	: 2.1 (pvr 004b 0201)
+
+processor	: 40
+cpu		: POWER8 (architected), altivec supported
+clock		: 3425.000000MHz
+revision	: 2.1 (pvr 004b 0201)
+
+processor	: 41
+cpu		: POWER8 (architected), altivec supported
+clock		: 3425.000000MHz
+revision	: 2.1 (pvr 004b 0201)
+
+processor	: 42
+cpu		: POWER8 (architected), altivec supported
+clock		: 3425.000000MHz
+revision	: 2.1 (pvr 004b 0201)
+
+processor	: 43
+cpu		: POWER8 (architected), altivec supported
+clock		: 3425.000000MHz
+revision	: 2.1 (pvr 004b 0201)
+
+processor	: 44
+cpu		: POWER8 (architected), altivec supported
+clock		: 3425.000000MHz
+revision	: 2.1 (pvr 004b 0201)
+
+processor	: 45
+cpu		: POWER8 (architected), altivec supported
+clock		: 3425.000000MHz
+revision	: 2.1 (pvr 004b 0201)
+
+processor	: 46
+cpu		: POWER8 (architected), altivec supported
+clock		: 3425.000000MHz
+revision	: 2.1 (pvr 004b 0201)
+
+processor	: 47
+cpu		: POWER8 (architected), altivec supported
+clock		: 3425.000000MHz
+revision	: 2.1 (pvr 004b 0201)
+
+processor	: 48
+cpu		: POWER8 (architected), altivec supported
+clock		: 3425.000000MHz
+revision	: 2.1 (pvr 004b 0201)
+
+processor	: 49
+cpu		: POWER8 (architected), altivec supported
+clock		: 3425.000000MHz
+revision	: 2.1 (pvr 004b 0201)
+
+processor	: 50
+cpu		: POWER8 (architected), altivec supported
+clock		: 3425.000000MHz
+revision	: 2.1 (pvr 004b 0201)
+
+processor	: 51
+cpu		: POWER8 (architected), altivec supported
+clock		: 3425.000000MHz
+revision	: 2.1 (pvr 004b 0201)
+
+processor	: 52
+cpu		: POWER8 (architected), altivec supported
+clock		: 3425.000000MHz
+revision	: 2.1 (pvr 004b 0201)
+
+processor	: 53
+cpu		: POWER8 (architected), altivec supported
+clock		: 3425.000000MHz
+revision	: 2.1 (pvr 004b 0201)
+
+processor	: 54
+cpu		: POWER8 (architected), altivec supported
+clock		: 3425.000000MHz
+revision	: 2.1 (pvr 004b 0201)
+
+processor	: 55
+cpu		: POWER8 (architected), altivec supported
+clock		: 3425.000000MHz
+revision	: 2.1 (pvr 004b 0201)
+
+processor	: 56
+cpu		: POWER8 (architected), altivec supported
+clock		: 3425.000000MHz
+revision	: 2.1 (pvr 004b 0201)
+
+processor	: 57
+cpu		: POWER8 (architected), altivec supported
+clock		: 3425.000000MHz
+revision	: 2.1 (pvr 004b 0201)
+
+processor	: 58
+cpu		: POWER8 (architected), altivec supported
+clock		: 3425.000000MHz
+revision	: 2.1 (pvr 004b 0201)
+
+processor	: 59
+cpu		: POWER8 (architected), altivec supported
+clock		: 3425.000000MHz
+revision	: 2.1 (pvr 004b 0201)
+
+processor	: 60
+cpu		: POWER8 (architected), altivec supported
+clock		: 3425.000000MHz
+revision	: 2.1 (pvr 004b 0201)
+
+processor	: 61
+cpu		: POWER8 (architected), altivec supported
+clock		: 3425.000000MHz
+revision	: 2.1 (pvr 004b 0201)
+
+processor	: 62
+cpu		: POWER8 (architected), altivec supported
+clock		: 3425.000000MHz
+revision	: 2.1 (pvr 004b 0201)
+
+processor	: 63
+cpu		: POWER8 (architected), altivec supported
+clock		: 3425.000000MHz
+revision	: 2.1 (pvr 004b 0201)
+
+processor	: 64
+cpu		: POWER8 (architected), altivec supported
+clock		: 3425.000000MHz
+revision	: 2.1 (pvr 004b 0201)
+
+processor	: 65
+cpu		: POWER8 (architected), altivec supported
+clock		: 3425.000000MHz
+revision	: 2.1 (pvr 004b 0201)
+
+processor	: 66
+cpu		: POWER8 (architected), altivec supported
+clock		: 3425.000000MHz
+revision	: 2.1 (pvr 004b 0201)
+
+processor	: 67
+cpu		: POWER8 (architected), altivec supported
+clock		: 3425.000000MHz
+revision	: 2.1 (pvr 004b 0201)
+
+processor	: 68
+cpu		: POWER8 (architected), altivec supported
+clock		: 3425.000000MHz
+revision	: 2.1 (pvr 004b 0201)
+
+processor	: 69
+cpu		: POWER8 (architected), altivec supported
+clock		: 3425.000000MHz
+revision	: 2.1 (pvr 004b 0201)
+
+processor	: 70
+cpu		: POWER8 (architected), altivec supported
+clock		: 3425.000000MHz
+revision	: 2.1 (pvr 004b 0201)
+
+processor	: 71
+cpu		: POWER8 (architected), altivec supported
+clock		: 3425.000000MHz
+revision	: 2.1 (pvr 004b 0201)
+
+processor	: 72
+cpu		: POWER8 (architected), altivec supported
+clock		: 3425.000000MHz
+revision	: 2.1 (pvr 004b 0201)
+
+processor	: 73
+cpu		: POWER8 (architected), altivec supported
+clock		: 3425.000000MHz
+revision	: 2.1 (pvr 004b 0201)
+
+processor	: 74
+cpu		: POWER8 (architected), altivec supported
+clock		: 3425.000000MHz
+revision	: 2.1 (pvr 004b 0201)
+
+processor	: 75
+cpu		: POWER8 (architected), altivec supported
+clock		: 3425.000000MHz
+revision	: 2.1 (pvr 004b 0201)
+
+processor	: 76
+cpu		: POWER8 (architected), altivec supported
+clock		: 3425.000000MHz
+revision	: 2.1 (pvr 004b 0201)
+
+processor	: 77
+cpu		: POWER8 (architected), altivec supported
+clock		: 3425.000000MHz
+revision	: 2.1 (pvr 004b 0201)
+
+processor	: 78
+cpu		: POWER8 (architected), altivec supported
+clock		: 3425.000000MHz
+revision	: 2.1 (pvr 004b 0201)
+
+processor	: 79
+cpu		: POWER8 (architected), altivec supported
+clock		: 3425.000000MHz
+revision	: 2.1 (pvr 004b 0201)
+
+processor	: 80
+cpu		: POWER8 (architected), altivec supported
+clock		: 3425.000000MHz
+revision	: 2.1 (pvr 004b 0201)
+
+processor	: 81
+cpu		: POWER8 (architected), altivec supported
+clock		: 3425.000000MHz
+revision	: 2.1 (pvr 004b 0201)
+
+processor	: 82
+cpu		: POWER8 (architected), altivec supported
+clock		: 3425.000000MHz
+revision	: 2.1 (pvr 004b 0201)
+
+processor	: 83
+cpu		: POWER8 (architected), altivec supported
+clock		: 3425.000000MHz
+revision	: 2.1 (pvr 004b 0201)
+
+processor	: 84
+cpu		: POWER8 (architected), altivec supported
+clock		: 3425.000000MHz
+revision	: 2.1 (pvr 004b 0201)
+
+processor	: 85
+cpu		: POWER8 (architected), altivec supported
+clock		: 3425.000000MHz
+revision	: 2.1 (pvr 004b 0201)
+
+processor	: 86
+cpu		: POWER8 (architected), altivec supported
+clock		: 3425.000000MHz
+revision	: 2.1 (pvr 004b 0201)
+
+processor	: 87
+cpu		: POWER8 (architected), altivec supported
+clock		: 3425.000000MHz
+revision	: 2.1 (pvr 004b 0201)
+
+processor	: 88
+cpu		: POWER8 (architected), altivec supported
+clock		: 3425.000000MHz
+revision	: 2.1 (pvr 004b 0201)
+
+processor	: 89
+cpu		: POWER8 (architected), altivec supported
+clock		: 3425.000000MHz
+revision	: 2.1 (pvr 004b 0201)
+
+processor	: 90
+cpu		: POWER8 (architected), altivec supported
+clock		: 3425.000000MHz
+revision	: 2.1 (pvr 004b 0201)
+
+processor	: 91
+cpu		: POWER8 (architected), altivec supported
+clock		: 3425.000000MHz
+revision	: 2.1 (pvr 004b 0201)
+
+processor	: 92
+cpu		: POWER8 (architected), altivec supported
+clock		: 3425.000000MHz
+revision	: 2.1 (pvr 004b 0201)
+
+processor	: 93
+cpu		: POWER8 (architected), altivec supported
+clock		: 3425.000000MHz
+revision	: 2.1 (pvr 004b 0201)
+
+processor	: 94
+cpu		: POWER8 (architected), altivec supported
+clock		: 3425.000000MHz
+revision	: 2.1 (pvr 004b 0201)
+
+processor	: 95
+cpu		: POWER8 (architected), altivec supported
+clock		: 3425.000000MHz
+revision	: 2.1 (pvr 004b 0201)
+
+processor	: 96
+cpu		: POWER8 (architected), altivec supported
+clock		: 3425.000000MHz
+revision	: 2.1 (pvr 004b 0201)
+
+processor	: 97
+cpu		: POWER8 (architected), altivec supported
+clock		: 3425.000000MHz
+revision	: 2.1 (pvr 004b 0201)
+
+processor	: 98
+cpu		: POWER8 (architected), altivec supported
+clock		: 3425.000000MHz
+revision	: 2.1 (pvr 004b 0201)
+
+processor	: 99
+cpu		: POWER8 (architected), altivec supported
+clock		: 3425.000000MHz
+revision	: 2.1 (pvr 004b 0201)
+
+processor	: 100
+cpu		: POWER8 (architected), altivec supported
+clock		: 3425.000000MHz
+revision	: 2.1 (pvr 004b 0201)
+
+processor	: 101
+cpu		: POWER8 (architected), altivec supported
+clock		: 3425.000000MHz
+revision	: 2.1 (pvr 004b 0201)
+
+processor	: 102
+cpu		: POWER8 (architected), altivec supported
+clock		: 3425.000000MHz
+revision	: 2.1 (pvr 004b 0201)
+
+processor	: 103
+cpu		: POWER8 (architected), altivec supported
+clock		: 3425.000000MHz
+revision	: 2.1 (pvr 004b 0201)
+
+processor	: 104
+cpu		: POWER8 (architected), altivec supported
+clock		: 3425.000000MHz
+revision	: 2.1 (pvr 004b 0201)
+
+processor	: 105
+cpu		: POWER8 (architected), altivec supported
+clock		: 3425.000000MHz
+revision	: 2.1 (pvr 004b 0201)
+
+processor	: 106
+cpu		: POWER8 (architected), altivec supported
+clock		: 3425.000000MHz
+revision	: 2.1 (pvr 004b 0201)
+
+processor	: 107
+cpu		: POWER8 (architected), altivec supported
+clock		: 3425.000000MHz
+revision	: 2.1 (pvr 004b 0201)
+
+processor	: 108
+cpu		: POWER8 (architected), altivec supported
+clock		: 3425.000000MHz
+revision	: 2.1 (pvr 004b 0201)
+
+processor	: 109
+cpu		: POWER8 (architected), altivec supported
+clock		: 3425.000000MHz
+revision	: 2.1 (pvr 004b 0201)
+
+processor	: 110
+cpu		: POWER8 (architected), altivec supported
+clock		: 3425.000000MHz
+revision	: 2.1 (pvr 004b 0201)
+
+processor	: 111
+cpu		: POWER8 (architected), altivec supported
+clock		: 3425.000000MHz
+revision	: 2.1 (pvr 004b 0201)
+
+processor	: 112
+cpu		: POWER8 (architected), altivec supported
+clock		: 3425.000000MHz
+revision	: 2.1 (pvr 004b 0201)
+
+processor	: 113
+cpu		: POWER8 (architected), altivec supported
+clock		: 3425.000000MHz
+revision	: 2.1 (pvr 004b 0201)
+
+processor	: 114
+cpu		: POWER8 (architected), altivec supported
+clock		: 3425.000000MHz
+revision	: 2.1 (pvr 004b 0201)
+
+processor	: 115
+cpu		: POWER8 (architected), altivec supported
+clock		: 3425.000000MHz
+revision	: 2.1 (pvr 004b 0201)
+
+processor	: 116
+cpu		: POWER8 (architected), altivec supported
+clock		: 3425.000000MHz
+revision	: 2.1 (pvr 004b 0201)
+
+processor	: 117
+cpu		: POWER8 (architected), altivec supported
+clock		: 3425.000000MHz
+revision	: 2.1 (pvr 004b 0201)
+
+processor	: 118
+cpu		: POWER8 (architected), altivec supported
+clock		: 3425.000000MHz
+revision	: 2.1 (pvr 004b 0201)
+
+processor	: 119
+cpu		: POWER8 (architected), altivec supported
+clock		: 3425.000000MHz
+revision	: 2.1 (pvr 004b 0201)
+
+processor	: 120
+cpu		: POWER8 (architected), altivec supported
+clock		: 3425.000000MHz
+revision	: 2.1 (pvr 004b 0201)
+
+processor	: 121
+cpu		: POWER8 (architected), altivec supported
+clock		: 3425.000000MHz
+revision	: 2.1 (pvr 004b 0201)
+
+processor	: 122
+cpu		: POWER8 (architected), altivec supported
+clock		: 3425.000000MHz
+revision	: 2.1 (pvr 004b 0201)
+
+processor	: 123
+cpu		: POWER8 (architected), altivec supported
+clock		: 3425.000000MHz
+revision	: 2.1 (pvr 004b 0201)
+
+processor	: 124
+cpu		: POWER8 (architected), altivec supported
+clock		: 3425.000000MHz
+revision	: 2.1 (pvr 004b 0201)
+
+processor	: 125
+cpu		: POWER8 (architected), altivec supported
+clock		: 3425.000000MHz
+revision	: 2.1 (pvr 004b 0201)
+
+processor	: 126
+cpu		: POWER8 (architected), altivec supported
+clock		: 3425.000000MHz
+revision	: 2.1 (pvr 004b 0201)
+
+processor	: 127
+cpu		: POWER8 (architected), altivec supported
+clock		: 3425.000000MHz
+revision	: 2.1 (pvr 004b 0201)
+
+processor	: 128
+cpu		: POWER8 (architected), altivec supported
+clock		: 3425.000000MHz
+revision	: 2.1 (pvr 004b 0201)
+
+processor	: 129
+cpu		: POWER8 (architected), altivec supported
+clock		: 3425.000000MHz
+revision	: 2.1 (pvr 004b 0201)
+
+processor	: 130
+cpu		: POWER8 (architected), altivec supported
+clock		: 3425.000000MHz
+revision	: 2.1 (pvr 004b 0201)
+
+processor	: 131
+cpu		: POWER8 (architected), altivec supported
+clock		: 3425.000000MHz
+revision	: 2.1 (pvr 004b 0201)
+
+processor	: 132
+cpu		: POWER8 (architected), altivec supported
+clock		: 3425.000000MHz
+revision	: 2.1 (pvr 004b 0201)
+
+processor	: 133
+cpu		: POWER8 (architected), altivec supported
+clock		: 3425.000000MHz
+revision	: 2.1 (pvr 004b 0201)
+
+processor	: 134
+cpu		: POWER8 (architected), altivec supported
+clock		: 3425.000000MHz
+revision	: 2.1 (pvr 004b 0201)
+
+processor	: 135
+cpu		: POWER8 (architected), altivec supported
+clock		: 3425.000000MHz
+revision	: 2.1 (pvr 004b 0201)
+
+processor	: 136
+cpu		: POWER8 (architected), altivec supported
+clock		: 3425.000000MHz
+revision	: 2.1 (pvr 004b 0201)
+
+processor	: 137
+cpu		: POWER8 (architected), altivec supported
+clock		: 3425.000000MHz
+revision	: 2.1 (pvr 004b 0201)
+
+processor	: 138
+cpu		: POWER8 (architected), altivec supported
+clock		: 3425.000000MHz
+revision	: 2.1 (pvr 004b 0201)
+
+processor	: 139
+cpu		: POWER8 (architected), altivec supported
+clock		: 3425.000000MHz
+revision	: 2.1 (pvr 004b 0201)
+
+processor	: 140
+cpu		: POWER8 (architected), altivec supported
+clock		: 3425.000000MHz
+revision	: 2.1 (pvr 004b 0201)
+
+processor	: 141
+cpu		: POWER8 (architected), altivec supported
+clock		: 3425.000000MHz
+revision	: 2.1 (pvr 004b 0201)
+
+processor	: 142
+cpu		: POWER8 (architected), altivec supported
+clock		: 3425.000000MHz
+revision	: 2.1 (pvr 004b 0201)
+
+processor	: 143
+cpu		: POWER8 (architected), altivec supported
+clock		: 3425.000000MHz
+revision	: 2.1 (pvr 004b 0201)
+
+processor	: 144
+cpu		: POWER8 (architected), altivec supported
+clock		: 3425.000000MHz
+revision	: 2.1 (pvr 004b 0201)
+
+processor	: 145
+cpu		: POWER8 (architected), altivec supported
+clock		: 3425.000000MHz
+revision	: 2.1 (pvr 004b 0201)
+
+processor	: 146
+cpu		: POWER8 (architected), altivec supported
+clock		: 3425.000000MHz
+revision	: 2.1 (pvr 004b 0201)
+
+processor	: 147
+cpu		: POWER8 (architected), altivec supported
+clock		: 3425.000000MHz
+revision	: 2.1 (pvr 004b 0201)
+
+processor	: 148
+cpu		: POWER8 (architected), altivec supported
+clock		: 3425.000000MHz
+revision	: 2.1 (pvr 004b 0201)
+
+processor	: 149
+cpu		: POWER8 (architected), altivec supported
+clock		: 3425.000000MHz
+revision	: 2.1 (pvr 004b 0201)
+
+processor	: 150
+cpu		: POWER8 (architected), altivec supported
+clock		: 3425.000000MHz
+revision	: 2.1 (pvr 004b 0201)
+
+processor	: 151
+cpu		: POWER8 (architected), altivec supported
+clock		: 3425.000000MHz
+revision	: 2.1 (pvr 004b 0201)
+
+processor	: 152
+cpu		: POWER8 (architected), altivec supported
+clock		: 3425.000000MHz
+revision	: 2.1 (pvr 004b 0201)
+
+processor	: 153
+cpu		: POWER8 (architected), altivec supported
+clock		: 3425.000000MHz
+revision	: 2.1 (pvr 004b 0201)
+
+processor	: 154
+cpu		: POWER8 (architected), altivec supported
+clock		: 3425.000000MHz
+revision	: 2.1 (pvr 004b 0201)
+
+processor	: 155
+cpu		: POWER8 (architected), altivec supported
+clock		: 3425.000000MHz
+revision	: 2.1 (pvr 004b 0201)
+
+processor	: 156
+cpu		: POWER8 (architected), altivec supported
+clock		: 3425.000000MHz
+revision	: 2.1 (pvr 004b 0201)
+
+processor	: 157
+cpu		: POWER8 (architected), altivec supported
+clock		: 3425.000000MHz
+revision	: 2.1 (pvr 004b 0201)
+
+processor	: 158
+cpu		: POWER8 (architected), altivec supported
+clock		: 3425.000000MHz
+revision	: 2.1 (pvr 004b 0201)
+
+processor	: 159
+cpu		: POWER8 (architected), altivec supported
+clock		: 3425.000000MHz
+revision	: 2.1 (pvr 004b 0201)
+
+processor	: 160
+cpu		: POWER8 (architected), altivec supported
+clock		: 3425.000000MHz
+revision	: 2.1 (pvr 004b 0201)
+
+processor	: 161
+cpu		: POWER8 (architected), altivec supported
+clock		: 3425.000000MHz
+revision	: 2.1 (pvr 004b 0201)
+
+processor	: 162
+cpu		: POWER8 (architected), altivec supported
+clock		: 3425.000000MHz
+revision	: 2.1 (pvr 004b 0201)
+
+processor	: 163
+cpu		: POWER8 (architected), altivec supported
+clock		: 3425.000000MHz
+revision	: 2.1 (pvr 004b 0201)
+
+processor	: 164
+cpu		: POWER8 (architected), altivec supported
+clock		: 3425.000000MHz
+revision	: 2.1 (pvr 004b 0201)
+
+processor	: 165
+cpu		: POWER8 (architected), altivec supported
+clock		: 3425.000000MHz
+revision	: 2.1 (pvr 004b 0201)
+
+processor	: 166
+cpu		: POWER8 (architected), altivec supported
+clock		: 3425.000000MHz
+revision	: 2.1 (pvr 004b 0201)
+
+processor	: 167
+cpu		: POWER8 (architected), altivec supported
+clock		: 3425.000000MHz
+revision	: 2.1 (pvr 004b 0201)
+
+processor	: 168
+cpu		: POWER8 (architected), altivec supported
+clock		: 3425.000000MHz
+revision	: 2.1 (pvr 004b 0201)
+
+processor	: 169
+cpu		: POWER8 (architected), altivec supported
+clock		: 3425.000000MHz
+revision	: 2.1 (pvr 004b 0201)
+
+processor	: 170
+cpu		: POWER8 (architected), altivec supported
+clock		: 3425.000000MHz
+revision	: 2.1 (pvr 004b 0201)
+
+processor	: 171
+cpu		: POWER8 (architected), altivec supported
+clock		: 3425.000000MHz
+revision	: 2.1 (pvr 004b 0201)
+
+processor	: 172
+cpu		: POWER8 (architected), altivec supported
+clock		: 3425.000000MHz
+revision	: 2.1 (pvr 004b 0201)
+
+processor	: 173
+cpu		: POWER8 (architected), altivec supported
+clock		: 3425.000000MHz
+revision	: 2.1 (pvr 004b 0201)
+
+processor	: 174
+cpu		: POWER8 (architected), altivec supported
+clock		: 3425.000000MHz
+revision	: 2.1 (pvr 004b 0201)
+
+processor	: 175
+cpu		: POWER8 (architected), altivec supported
+clock		: 3425.000000MHz
+revision	: 2.1 (pvr 004b 0201)
+
+processor	: 176
+cpu		: POWER8 (architected), altivec supported
+clock		: 3425.000000MHz
+revision	: 2.1 (pvr 004b 0201)
+
+processor	: 177
+cpu		: POWER8 (architected), altivec supported
+clock		: 3425.000000MHz
+revision	: 2.1 (pvr 004b 0201)
+
+processor	: 178
+cpu		: POWER8 (architected), altivec supported
+clock		: 3425.000000MHz
+revision	: 2.1 (pvr 004b 0201)
+
+processor	: 179
+cpu		: POWER8 (architected), altivec supported
+clock		: 3425.000000MHz
+revision	: 2.1 (pvr 004b 0201)
+
+processor	: 180
+cpu		: POWER8 (architected), altivec supported
+clock		: 3425.000000MHz
+revision	: 2.1 (pvr 004b 0201)
+
+processor	: 181
+cpu		: POWER8 (architected), altivec supported
+clock		: 3425.000000MHz
+revision	: 2.1 (pvr 004b 0201)
+
+processor	: 182
+cpu		: POWER8 (architected), altivec supported
+clock		: 3425.000000MHz
+revision	: 2.1 (pvr 004b 0201)
+
+processor	: 183
+cpu		: POWER8 (architected), altivec supported
+clock		: 3425.000000MHz
+revision	: 2.1 (pvr 004b 0201)
+
+processor	: 184
+cpu		: POWER8 (architected), altivec supported
+clock		: 3425.000000MHz
+revision	: 2.1 (pvr 004b 0201)
+
+processor	: 185
+cpu		: POWER8 (architected), altivec supported
+clock		: 3425.000000MHz
+revision	: 2.1 (pvr 004b 0201)
+
+processor	: 186
+cpu		: POWER8 (architected), altivec supported
+clock		: 3425.000000MHz
+revision	: 2.1 (pvr 004b 0201)
+
+processor	: 187
+cpu		: POWER8 (architected), altivec supported
+clock		: 3425.000000MHz
+revision	: 2.1 (pvr 004b 0201)
+
+processor	: 188
+cpu		: POWER8 (architected), altivec supported
+clock		: 3425.000000MHz
+revision	: 2.1 (pvr 004b 0201)
+
+processor	: 189
+cpu		: POWER8 (architected), altivec supported
+clock		: 3425.000000MHz
+revision	: 2.1 (pvr 004b 0201)
+
+processor	: 190
+cpu		: POWER8 (architected), altivec supported
+clock		: 3425.000000MHz
+revision	: 2.1 (pvr 004b 0201)
+
+processor	: 191
+cpu		: POWER8 (architected), altivec supported
+clock		: 3425.000000MHz
+revision	: 2.1 (pvr 004b 0201)
+
+processor	: 192
+cpu		: POWER8 (architected), altivec supported
+clock		: 3425.000000MHz
+revision	: 2.1 (pvr 004b 0201)
+
+processor	: 193
+cpu		: POWER8 (architected), altivec supported
+clock		: 3425.000000MHz
+revision	: 2.1 (pvr 004b 0201)
+
+processor	: 194
+cpu		: POWER8 (architected), altivec supported
+clock		: 3425.000000MHz
+revision	: 2.1 (pvr 004b 0201)
+
+processor	: 195
+cpu		: POWER8 (architected), altivec supported
+clock		: 3425.000000MHz
+revision	: 2.1 (pvr 004b 0201)
+
+processor	: 196
+cpu		: POWER8 (architected), altivec supported
+clock		: 3425.000000MHz
+revision	: 2.1 (pvr 004b 0201)
+
+processor	: 197
+cpu		: POWER8 (architected), altivec supported
+clock		: 3425.000000MHz
+revision	: 2.1 (pvr 004b 0201)
+
+processor	: 198
+cpu		: POWER8 (architected), altivec supported
+clock		: 3425.000000MHz
+revision	: 2.1 (pvr 004b 0201)
+
+processor	: 199
+cpu		: POWER8 (architected), altivec supported
+clock		: 3425.000000MHz
+revision	: 2.1 (pvr 004b 0201)
+
+processor	: 200
+cpu		: POWER8 (architected), altivec supported
+clock		: 3425.000000MHz
+revision	: 2.1 (pvr 004b 0201)
+
+processor	: 201
+cpu		: POWER8 (architected), altivec supported
+clock		: 3425.000000MHz
+revision	: 2.1 (pvr 004b 0201)
+
+processor	: 202
+cpu		: POWER8 (architected), altivec supported
+clock		: 3425.000000MHz
+revision	: 2.1 (pvr 004b 0201)
+
+processor	: 203
+cpu		: POWER8 (architected), altivec supported
+clock		: 3425.000000MHz
+revision	: 2.1 (pvr 004b 0201)
+
+processor	: 204
+cpu		: POWER8 (architected), altivec supported
+clock		: 3425.000000MHz
+revision	: 2.1 (pvr 004b 0201)
+
+processor	: 205
+cpu		: POWER8 (architected), altivec supported
+clock		: 3425.000000MHz
+revision	: 2.1 (pvr 004b 0201)
+
+processor	: 206
+cpu		: POWER8 (architected), altivec supported
+clock		: 3425.000000MHz
+revision	: 2.1 (pvr 004b 0201)
+
+processor	: 207
+cpu		: POWER8 (architected), altivec supported
+clock		: 3425.000000MHz
+revision	: 2.1 (pvr 004b 0201)
+
+processor	: 208
+cpu		: POWER8 (architected), altivec supported
+clock		: 3425.000000MHz
+revision	: 2.1 (pvr 004b 0201)
+
+processor	: 209
+cpu		: POWER8 (architected), altivec supported
+clock		: 3425.000000MHz
+revision	: 2.1 (pvr 004b 0201)
+
+processor	: 210
+cpu		: POWER8 (architected), altivec supported
+clock		: 3425.000000MHz
+revision	: 2.1 (pvr 004b 0201)
+
+processor	: 211
+cpu		: POWER8 (architected), altivec supported
+clock		: 3425.000000MHz
+revision	: 2.1 (pvr 004b 0201)
+
+processor	: 212
+cpu		: POWER8 (architected), altivec supported
+clock		: 3425.000000MHz
+revision	: 2.1 (pvr 004b 0201)
+
+processor	: 213
+cpu		: POWER8 (architected), altivec supported
+clock		: 3425.000000MHz
+revision	: 2.1 (pvr 004b 0201)
+
+processor	: 214
+cpu		: POWER8 (architected), altivec supported
+clock		: 3425.000000MHz
+revision	: 2.1 (pvr 004b 0201)
+
+processor	: 215
+cpu		: POWER8 (architected), altivec supported
+clock		: 3425.000000MHz
+revision	: 2.1 (pvr 004b 0201)
+
+processor	: 216
+cpu		: POWER8 (architected), altivec supported
+clock		: 3425.000000MHz
+revision	: 2.1 (pvr 004b 0201)
+
+processor	: 217
+cpu		: POWER8 (architected), altivec supported
+clock		: 3425.000000MHz
+revision	: 2.1 (pvr 004b 0201)
+
+processor	: 218
+cpu		: POWER8 (architected), altivec supported
+clock		: 3425.000000MHz
+revision	: 2.1 (pvr 004b 0201)
+
+processor	: 219
+cpu		: POWER8 (architected), altivec supported
+clock		: 3425.000000MHz
+revision	: 2.1 (pvr 004b 0201)
+
+processor	: 220
+cpu		: POWER8 (architected), altivec supported
+clock		: 3425.000000MHz
+revision	: 2.1 (pvr 004b 0201)
+
+processor	: 221
+cpu		: POWER8 (architected), altivec supported
+clock		: 3425.000000MHz
+revision	: 2.1 (pvr 004b 0201)
+
+processor	: 222
+cpu		: POWER8 (architected), altivec supported
+clock		: 3425.000000MHz
+revision	: 2.1 (pvr 004b 0201)
+
+processor	: 223
+cpu		: POWER8 (architected), altivec supported
+clock		: 3425.000000MHz
+revision	: 2.1 (pvr 004b 0201)
+
+processor	: 224
+cpu		: POWER8 (architected), altivec supported
+clock		: 3425.000000MHz
+revision	: 2.1 (pvr 004b 0201)
+
+processor	: 225
+cpu		: POWER8 (architected), altivec supported
+clock		: 3425.000000MHz
+revision	: 2.1 (pvr 004b 0201)
+
+processor	: 226
+cpu		: POWER8 (architected), altivec supported
+clock		: 3425.000000MHz
+revision	: 2.1 (pvr 004b 0201)
+
+processor	: 227
+cpu		: POWER8 (architected), altivec supported
+clock		: 3425.000000MHz
+revision	: 2.1 (pvr 004b 0201)
+
+processor	: 228
+cpu		: POWER8 (architected), altivec supported
+clock		: 3425.000000MHz
+revision	: 2.1 (pvr 004b 0201)
+
+processor	: 229
+cpu		: POWER8 (architected), altivec supported
+clock		: 3425.000000MHz
+revision	: 2.1 (pvr 004b 0201)
+
+processor	: 230
+cpu		: POWER8 (architected), altivec supported
+clock		: 3425.000000MHz
+revision	: 2.1 (pvr 004b 0201)
+
+processor	: 231
+cpu		: POWER8 (architected), altivec supported
+clock		: 3425.000000MHz
+revision	: 2.1 (pvr 004b 0201)
+
+processor	: 232
+cpu		: POWER8 (architected), altivec supported
+clock		: 3425.000000MHz
+revision	: 2.1 (pvr 004b 0201)
+
+processor	: 233
+cpu		: POWER8 (architected), altivec supported
+clock		: 3425.000000MHz
+revision	: 2.1 (pvr 004b 0201)
+
+processor	: 234
+cpu		: POWER8 (architected), altivec supported
+clock		: 3425.000000MHz
+revision	: 2.1 (pvr 004b 0201)
+
+processor	: 235
+cpu		: POWER8 (architected), altivec supported
+clock		: 3425.000000MHz
+revision	: 2.1 (pvr 004b 0201)
+
+processor	: 236
+cpu		: POWER8 (architected), altivec supported
+clock		: 3425.000000MHz
+revision	: 2.1 (pvr 004b 0201)
+
+processor	: 237
+cpu		: POWER8 (architected), altivec supported
+clock		: 3425.000000MHz
+revision	: 2.1 (pvr 004b 0201)
+
+processor	: 238
+cpu		: POWER8 (architected), altivec supported
+clock		: 3425.000000MHz
+revision	: 2.1 (pvr 004b 0201)
+
+processor	: 239
+cpu		: POWER8 (architected), altivec supported
+clock		: 3425.000000MHz
+revision	: 2.1 (pvr 004b 0201)
+
+processor	: 240
+cpu		: POWER8 (architected), altivec supported
+clock		: 3425.000000MHz
+revision	: 2.1 (pvr 004b 0201)
+
+processor	: 241
+cpu		: POWER8 (architected), altivec supported
+clock		: 3425.000000MHz
+revision	: 2.1 (pvr 004b 0201)
+
+processor	: 242
+cpu		: POWER8 (architected), altivec supported
+clock		: 3425.000000MHz
+revision	: 2.1 (pvr 004b 0201)
+
+processor	: 243
+cpu		: POWER8 (architected), altivec supported
+clock		: 3425.000000MHz
+revision	: 2.1 (pvr 004b 0201)
+
+processor	: 244
+cpu		: POWER8 (architected), altivec supported
+clock		: 3425.000000MHz
+revision	: 2.1 (pvr 004b 0201)
+
+processor	: 245
+cpu		: POWER8 (architected), altivec supported
+clock		: 3425.000000MHz
+revision	: 2.1 (pvr 004b 0201)
+
+processor	: 246
+cpu		: POWER8 (architected), altivec supported
+clock		: 3425.000000MHz
+revision	: 2.1 (pvr 004b 0201)
+
+processor	: 247
+cpu		: POWER8 (architected), altivec supported
+clock		: 3425.000000MHz
+revision	: 2.1 (pvr 004b 0201)
+
+processor	: 248
+cpu		: POWER8 (architected), altivec supported
+clock		: 3425.000000MHz
+revision	: 2.1 (pvr 004b 0201)
+
+processor	: 249
+cpu		: POWER8 (architected), altivec supported
+clock		: 3425.000000MHz
+revision	: 2.1 (pvr 004b 0201)
+
+processor	: 250
+cpu		: POWER8 (architected), altivec supported
+clock		: 3425.000000MHz
+revision	: 2.1 (pvr 004b 0201)
+
+processor	: 251
+cpu		: POWER8 (architected), altivec supported
+clock		: 3425.000000MHz
+revision	: 2.1 (pvr 004b 0201)
+
+processor	: 252
+cpu		: POWER8 (architected), altivec supported
+clock		: 3425.000000MHz
+revision	: 2.1 (pvr 004b 0201)
+
+processor	: 253
+cpu		: POWER8 (architected), altivec supported
+clock		: 3425.000000MHz
+revision	: 2.1 (pvr 004b 0201)
+
+processor	: 254
+cpu		: POWER8 (architected), altivec supported
+clock		: 3425.000000MHz
+revision	: 2.1 (pvr 004b 0201)
+
+processor	: 255
+cpu		: POWER8 (architected), altivec supported
+clock		: 3425.000000MHz
+revision	: 2.1 (pvr 004b 0201)
+
+timebase	: 512000000
+platform	: pSeries
+model		: IBM,8247-22L
+machine		: CHRP IBM,8247-22L
+MMU		: Hash
+[michaelsu24@sjsu a1]$ head -n 1 /proc/meminfo
+MemTotal:       73080640 kB
+[michaelsu24@sjsu a1]$ head -n 5 /proc/meminfo
+MemTotal:       73080640 kB
+MemFree:        20190528 kB
+MemAvailable:   45276352 kB
+Buffers:          610560 kB
+Cached:         27276224 kB
+[michaelsu24@sjsu a1]$ head -n 5 /proc/cpuinfo
+processor	: 0
+cpu		: POWER8 (architected), altivec supported
+clock		: 3425.000000MHz
+revision	: 2.1 (pvr 004b 0201)
+
+[michaelsu24@sjsu a1]$ grep "MHz" /proc/cpuinfo | tail -n 1
+clock		: 3425.000000MHz
+[michaelsu24@sjsu a1]$ ls /etc/
+adjtime                           exports          ld.so.conf.d              pam.d             shells
+aliases                           favicon.png      libaudit.conf             papersize         skel
+alternatives                      filesystems      libblockdev               passwd            smartmontools
+anacrontab                        firewalld        libibverbs.d              passwd-           sos
+asciidoc                          fonts            libnl                     pinforc           ssh
+at.deny                           fprintd.conf     libpaper.d                pkcs11            ssl
+audit                             fstab            libreport                 pki               sssd
+authselect                        fuse.conf        libssh                    plymouth          subgid
+bash_completion.d                 gcrypt           libuser.conf              pm                subgid-
+bashrc                            gdbinit          locale.conf               polkit-1          subuid
+bindresvport.blacklist            gdbinit.d        localtime                 popt.d            subuid-
+bindresvport.blacklist.rsct.save  glvnd            login.defs                ppc64-diag        sudo.conf
+binfmt.d                          gnupg            logrotate.conf            printcap          sudoers
+chkconfig.d                       GREP_COLORS      logrotate.d               profile           sudoers.d
+chrony.conf                       groff            lsm                       profile.d         sudo-ldap.conf
+chrony.keys                       group            lsvpd                     protocols         swid
+cifs-utils                        group-           lvm                       rc0.d             sysconfig
+cloud                             grub2.cfg        machine-id                rc1.d             sysctl.conf
+cni                               grub.d           magic                     rc2.d             sysctl.d
+cockpit                           gshadow          mailcap                   rc3.d             systemd
+containers                        gshadow-         makedumpfile.conf.sample  rc4.d             system-release
+cron.d                            gss              man_db.conf               rc5.d             system-release-cpe
+cron.daily                        host.conf        mime.types                rc6.d             tcsd.conf
+cron.deny                         hostname         mke2fs.conf               rc.d              terminfo
+cron.hourly                       hosts            modprobe.d                rc.local          tmpfiles.d
+cron.monthly                      idmapd.conf      modules-load.d            rc.powerfail      trusted-key.key
+crontab                           init.d           motd                      redhat-release    tuned
+cron.weekly                       inittab          motd.d                    request-key.conf  udev
+crypto-policies                   inputrc          mtab                      request-key.d     udisks2
+crypttab                          insights-client  multipath                 resolv.conf       unbound
+csh.cshrc                         iproute2         multipath.conf            rhc               updatedb.conf
+csh.login                         iscsi            nanorc                    rhsm              usb_modeswitch.conf
+ct_node_id                        issue            netconfig                 rpc               vconsole.conf
+dbus-1                            issue.d          NetworkManager            rpm               vimrc
+dconf                             issue.net        networks                  rsyslog.conf      virc
+default                           java             nftables                  rsyslog.d         wgetrc
+depmod.d                          jvm              nsswitch.conf             rwtab.d           X11
+dhcp                              jvm-commmon      nsswitch.conf.bak         samba             xattr.conf
+DIR_COLORS                        kdump            nvme                      sasl2             xdg
+DIR_COLORS.256color               kdump.conf       objrepos                  security          xinetd.d
+DIR_COLORS.lightbgcolor           kernel           oddjob                    selinux           xml
+dnf                               keyutils         oddjobd.conf              services          yum
+dracut.conf                       krb5.conf        oddjobd.conf.d            sestatus.conf     yum.conf
+dracut.conf.d                     krb5.conf.d      openldap                  setroubleshoot    yum.repos.d
+egl                               kshrc            opt                       sgml
+environment                       ld.so.cache      os-release                shadow
+ethertypes                        ld.so.conf       PackageKit                shadow-
+[michaelsu24@sjsu a1]$ cat /etc/os-release
+NAME="Red Hat Enterprise Linux"
+VERSION="8.6 (Ootpa)"
+ID="rhel"
+ID_LIKE="fedora"
+VERSION_ID="8.6"
+PLATFORM_ID="platform:el8"
+PRETTY_NAME="Red Hat Enterprise Linux 8.6 (Ootpa)"
+ANSI_COLOR="0;31"
+CPE_NAME="cpe:/o:redhat:enterprise_linux:8::baseos"
+HOME_URL="https://www.redhat.com/"
+DOCUMENTATION_URL="https://access.redhat.com/documentation/red_hat_enterprise_linux/8/"
+BUG_REPORT_URL="https://bugzilla.redhat.com/"
+
+REDHAT_BUGZILLA_PRODUCT="Red Hat Enterprise Linux 8"
+REDHAT_BUGZILLA_PRODUCT_VERSION=8.6
+REDHAT_SUPPORT_PRODUCT="Red Hat Enterprise Linux"
+REDHAT_SUPPORT_PRODUCT_VERSION="8.6"
+[michaelsu24@sjsu a1]$ cp /datasets/taxidata.tar.gz .
+[michaelsu24@sjsu a1]$ ls
+taxidata.tar.gz
+[michaelsu24@sjsu a1]$ tar -xzvf taxidata.tar.gz
+taxidata/
+taxidata/2019-08.csv
+taxidata/2019-09.csv
+taxidata/2019-10.csv
+taxidata/2019-04.csv
+taxidata/2019-05.csv
+taxidata/2019-11.csv
+taxidata/2019-07.csv
+taxidata/2019-12.csv
+taxidata/2019-06.csv
+taxidata/2019-02.csv
+taxidata/2019-03.csv
+taxidata/2019-01.csv
+[michaelsu24@sjsu a1]$ ls
+taxidata  taxidata.tar.gz
+[michaelsu24@sjsu a1]$ cd ..
+[michaelsu24@sjsu cs131]$ git init
+hint: Using 'master' as the name for the initial branch. This default branch name
+hint: is subject to change. To configure the initial branch name to use in all
+hint: of your new repositories, which will suppress this warning, call:
+hint: 
+hint: 	git config --global init.defaultBranch <name>
+hint: 
+hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+hint: 'development'. The just-created branch can be renamed via this command:
+hint: 
+hint: 	git branch -m <name>
+Initialized empty Git repository in /mnt/scratch/michaelsu24/cs131/.git/
+[michaelsu24@sjsu cs131]$ git remote add origingit@github.com:mic0430/cs131.git
+usage: git remote add [<options>] <name> <url>
+
+    -f, --fetch           fetch the remote branches
+    --tags                import all tags and associated objects when fetching
+                          or do not fetch any tag at all (--no-tags)
+    -t, --track <branch>  branch(es) to track
+    -m, --master <branch>
+                          master branch
+    --mirror[=(push|fetch)]
+                          set up remote as a mirror to push to or fetch from
+
+[michaelsu24@sjsu cs131]$ git remote rm
+usage: git remote remove <name>
+
+[michaelsu24@sjsu cs131]$ git remote rm origin
+error: No such remote: 'origin'
+[michaelsu24@sjsu cs131]$ git remote add origin https://github.com/mic0430/cs131.git
+[michaelsu24@sjsu cs131]$ git config --global user.email "chulaphang.25@gmail.com"
+[michaelsu24@sjsu cs131]$ git config --global user.name "michael"
+[michaelsu24@sjsu cs131]$ cd a1
+[michaelsu24@sjsu a1]$ history > cmds.log
+[michaelsu24@sjsu a1]$ ls
+cmds.log  taxidata  taxidata.tar.gz
+[michaelsu24@sjsu a1]$ git add.
+git: 'add.' is not a git command. See 'git --help'.
+
+The most similar command is
+	add
+[michaelsu24@sjsu a1]$ git add .
+^C
+[michaelsu24@sjsu a1]$ git add cmds.log
+[michaelsu24@sjsu a1]$ git commit -m "first commit" -a
+[master (root-commit) 22a7461] first commit
+ 1 file changed, 43 insertions(+)
+ create mode 100644 a1/cmds.log
+[michaelsu24@sjsu a1]$ git push -u origin master
+Username for 'https://github.com': mic0430
+Password for 'https://mic0430@github.com': 
+remote: Support for password authentication was removed on August 13, 2021.
+remote: Please see https://docs.github.com/get-started/getting-started-with-git/about-remote-repositories#cloning-with-https-urls for information on currently recommended modes of authentication.
+fatal: Authentication failed for 'https://github.com/mic0430/cs131.git/'
+[michaelsu24@sjsu a1]$ git push -u origin master
+Username for 'https://github.com': mic0430
+Password for 'https://mic0430@github.com': 
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 256 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (4/4), 685 bytes | 685.00 KiB/s, done.
+Total 4 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/mic0430/cs131.git
+ * [new branch]      master -> master
+Branch 'master' set up to track remote branch 'master' from 'origin'.
+[michaelsu24@sjsu a1]$ grep '2019-05-12' 2019-05.csv | awk -F',' 'NR > 1 {sum+=$17; count++} END {print sum/count}'
+grep: 2019-05.csv: No such file or directory
+awk: cmd. line:1: fatal: division by zero attempted
+[michaelsu24@sjsu a1]$ cd taxidata
+[michaelsu24@sjsu taxidata]$ grep '2019-05-12' 2019-05.csv | awk -F',' 'NR > 1 {sum+=$17; count++} END {print sum/count}'
+18.6652
+[michaelsu24@sjsu taxidata]$ grep '2019-05-12' 2019-05.csv | awk -F',' 'NR > 1 {print $17}' | sort -nr | head -n 1
+460.04
+[michaelsu24@sjsu taxidata]$ grep '2019-05-' 2019-05.csv | cut -d',' -f5,12 | grep -E '^.*,3|4|5|6|7|8|9' | cut -d',' -f2 | sort | uniq -c | sort -nr | head -10
+2277903 0.0
+1460189 0.5
+1360161 2.5
+ 735071 3.0
+ 724106 1.0
+ 458083 3.5
+  27501 4.5
+  12056 7.0
+   4156 -0.5
+   1207 -1.0
+[michaelsu24@sjsu taxidata]$ history > cmds.log
+[michaelsu24@sjsu taxidata]$ git commit -m "updated" -a
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	../taxidata.tar.gz
+	./
+
+nothing added to commit but untracked files present (use "git add" to track)
+[michaelsu24@sjsu taxidata]$ git add cmds log
+fatal: pathspec 'cmds' did not match any files
+[michaelsu24@sjsu taxidata]$ git add cmds.log
+[michaelsu24@sjsu taxidata]$ git commit -m "updated" -a
+[master c755daf] updated
+ 1 file changed, 55 insertions(+)
+ create mode 100644 a1/taxidata/cmds.log
+[michaelsu24@sjsu taxidata]$ git push -u origin master
+Username for 'https://github.com': mic0430
+Password for 'https://mic0430@github.com': 
+Enumerating objects: 7, done.
+Counting objects: 100% (7/7), done.
+Delta compression using up to 256 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (5/5), 1009 bytes | 1009.00 KiB/s, done.
+Total 5 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/mic0430/cs131.git
+   22a7461..c755daf  master -> master
+Branch 'master' set up to track remote branch 'master' from 'origin'.
+[michaelsu24@sjsu taxidata]$ vi cmds.log
+[michaelsu24@sjsu taxidata]$ git add cmds.log
+[michaelsu24@sjsu taxidata]$ git commit -m "updated" -a
+[master 9b29363] updated
+ 1 file changed, 14 insertions(+), 1 deletion(-)
+[michaelsu24@sjsu taxidata]$ git push -u origin master
+Username for 'https://github.com': mic0430
+Password for 'https://mic0430@github.com': 
+Enumerating objects: 9, done.
+Counting objects: 100% (9/9), done.
+Delta compression using up to 256 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (5/5), 529 bytes | 529.00 KiB/s, done.
+Total 5 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/mic0430/cs131.git
+   c755daf..9b29363  master -> master
+Branch 'master' set up to track remote branch 'master' from 'origin'.
+[michaelsu24@sjsu taxidata]$ cd ~/cs131/a1
+[michaelsu24@sjsu a1]$ echo "Question 2:My home directory path is echo $HOME, found it from the slide" >> a1.txt
+[michaelsu24@sjsu a1]$ id >> a1.txt
+[michaelsu24@sjsu a1]$ ls
+a1.txt  cmds.log  taxidata  taxidata.tar.gz
+[michaelsu24@sjsu a1]$ exit
+logout
+Connection to 172.20.25.9 closed.
+MacBook-Pro-2:~ michael$ 
+  [Restored Jun 16, 2024 at 9:45:14 PM]
+Last login: Sun Jun 16 21:45:05 on console
+
+The default interactive shell is now zsh.
+To update your account to use zsh, please run `chsh -s /bin/zsh`.
+For more details, please visit https://support.apple.com/kb/HT208050.
+MacBook-Pro-2:~ michael$ ssh michaelsu24@172.20.25.9
+
+  
+ssh michaelsu24@172.20.25.9
+ssh: connect to host 172.20.25.9 port 22: Operation timed out
+MacBook-Pro-2:~ michael$ 
+MacBook-Pro-2:~ michael$ 
+MacBook-Pro-2:~ michael$ ssh michaelsu24@172.20.25.9
+michaelsu24@172.20.25.9's password: 
+Activate the web console with: systemctl enable --now cockpit.socket
+
+Register this system with Red Hat Insights: insights-client --register
+Create an account or view all your systems at https://red.ht/insights-dashboard
+Last login: Sun Jun 16 00:58:21 2024 from 172.29.97.205
+[michaelsu24@sjsu ~]$ ls
+cs131
+[michaelsu24@sjsu ~]$ cd 131
+-bash: cd: 131: No such file or directory
+[michaelsu24@sjsu ~]$ cd a1
+-bash: cd: a1: No such file or directory
+[michaelsu24@sjsu ~]$ ECHO HOME
+-bash: ECHO: command not found
+[michaelsu24@sjsu ~]$ cd cs131
+[michaelsu24@sjsu cs131]$ cd a1
+[michaelsu24@sjsu a1]$ ls
+a1.txt  cmds.log  taxidata  taxidata.tar.gz
+[michaelsu24@sjsu a1]$ vi a1.txt
+[michaelsu24@sjsu a1]$ vi a1.txt
+[michaelsu24@sjsu a1]$ vi a1.txt
+[michaelsu24@sjsu a1]$ git commit -m "first commit" -a
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	a1.txt
+	taxidata.tar.gz
+	taxidata/2019-01.csv
+	taxidata/2019-02.csv
+	taxidata/2019-03.csv
+	taxidata/2019-04.csv
+	taxidata/2019-05.csv
+	taxidata/2019-06.csv
+	taxidata/2019-07.csv
+	taxidata/2019-08.csv
+	taxidata/2019-09.csv
+	taxidata/2019-10.csv
+	taxidata/2019-11.csv
+	taxidata/2019-12.csv
+
+nothing added to commit but untracked files present (use "git add" to track)
+[michaelsu24@sjsu a1]$ git add a1.txt
+[michaelsu24@sjsu a1]$ git commit -m "first commit" -a
+[master 37799a8] first commit
+ 1 file changed, 35 insertions(+)
+ create mode 100644 a1/a1.txt
+[michaelsu24@sjsu a1]$ git commit -m "updated" -a
+On branch master
+Your branch is ahead of 'origin/master' by 1 commit.
+  (use "git push" to publish your local commits)
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	taxidata.tar.gz
+	taxidata/2019-01.csv
+	taxidata/2019-02.csv
+	taxidata/2019-03.csv
+	taxidata/2019-04.csv
+	taxidata/2019-05.csv
+	taxidata/2019-06.csv
+	taxidata/2019-07.csv
+	taxidata/2019-08.csv
+	taxidata/2019-09.csv
+	taxidata/2019-10.csv
+	taxidata/2019-11.csv
+	taxidata/2019-12.csv
+
+nothing added to commit but untracked files present (use "git add" to track)
+[michaelsu24@sjsu a1]$ git push -u origin master
+
+fatal: unable to access 'https://github.com/mic0430/cs131.git/': Could not resolve host: github.com
+[michaelsu24@sjsu a1]$ 
+[michaelsu24@sjsu a1]$ git push -u origin master
+Username for 'https://github.com': mic0430
+Password for 'https://mic0430@github.com': 
+Enumerating objects: 6, done.
+Counting objects: 100% (6/6), done.
+Delta compression using up to 256 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (4/4), 1.01 KiB | 1.01 MiB/s, done.
+Total 4 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/mic0430/cs131.git
+   9b29363..37799a8  master -> master
+Branch 'master' set up to track remote branch 'master' from 'origin'.
+[michaelsu24@sjsu a1]$ cd taxidata
+[michaelsu24@sjsu taxidata]$ vi cmds.txt
+[michaelsu24@sjsu taxidata]$ ls
+2019-01.csv  2019-03.csv  2019-05.csv  2019-07.csv  2019-09.csv  2019-11.csv  cmds.log
+2019-02.csv  2019-04.csv  2019-06.csv  2019-08.csv  2019-10.csv  2019-12.csv
+[michaelsu24@sjsu taxidata]$ vi cmds.log
+
    26  head -n 5 /proc/cpuinfo
    27  grep "MHz" /proc/cpuinfo | tail -n 1
+question 7:
    28  ls /etc/
    29  cat /etc/os-release
+task b
    30  cp /datasets/taxidata.tar.gz .
    31  ls
    32  tar -xzvf taxidata.tar.gz
@@ -41,3 +1999,20 @@
    41  git config --global user.name "michael"
    42  cd a1
    43  history > cmds.log
+   44  ls
+   45  git add.
+   46  git add .
+   47  git add cmds.log
+   48  git commit -m "first commit" -a
+   49  git push -u origin master
+question 8:
+   50  grep '2019-05-12' 2019-05.csv | awk -F',' 'NR > 1 {sum+=$17; count++} END {print sum/count}'
+   51  cd taxidata
+   52  grep '2019-05-12' 2019-05.csv | awk -F',' 'NR > 1 {sum+=$17; count++} END {print sum/count}'
+question 9:
+   53  grep '2019-05-12' 2019-05.csv | awk -F',' 'NR > 1 {print $17}' | sort -nr | head -n 1
+question 10:
+   54  grep '2019-05-' 2019-05.csv | cut -d',' -f5,12 | grep -E '^.*,3|4|5|6|7|8|9' | cut -d',' -f2 | sort | uniq -c | sort -nr | head -10
+   55  history > cmds.log
+                                                                                                           68,6          Bot
+
