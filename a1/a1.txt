@@ -13,7 +13,7 @@ q4: I use commands “ls /proc/meminfo” to find about information of memory on
 
 q5:“head -n 1 /proc/meminfo”, my memory total is 73080640 kB.
 
-q6:“head -n 5 /proc/cpuinfo”, there is 0 processor on my server, the name is “POWER8”, and the speed is 3425 MHz
+q6:“head -n 5 /proc/cpuinfo”, there is 0 processor on my server, the name is “POWER8”, and the speed is 3.425 GHz (3425 MHz).
 
 
 q7:“ls /etc/” and “cat /etc/os-release”, os-release contains the information
