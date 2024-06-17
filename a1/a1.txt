@@ -1,0 +1,35 @@
+Question 2:My home directory path is echo /mnt/scratch/michaelsu24, found it from the slide
+uid=1248(michaelsu24) gid=1249(michaelsu24) groups=1249(michaelsu24
+
+
+q1:did it with commands “mkdir a1” and “cd a1”.
+
+q2:My home directory path is "cd cs131", I found it from the slide
+
+q3:My UID is 1248, belongs to group 1249, the commands are "id", "michaelsu24uid".
+
+
+q4: I use commands “ls /proc/meminfo” to find about information of memory on my server, “cat /proc/cpuinfo”, cpuinfo contains information about the CPU’s on my server
+
+q5:“head -n 1 /proc/meminfo”, my memory total is 73080640 kB.
+
+q6:“head -n 5 /proc/cpuinfo”, there is 0 processor on my server, the name is “POWER8”, and the speed is 3425 MHz
+
+
+q7:“ls /etc/” and “cat /etc/os-release”, os-release contains the information
+
+q8:“cd taxidata”  and “grep '2019-05-12' 2019-05.csv | awk -F',' 'NR > 1 {sum+=$17; count++} END {print sum/count}'”, the average is 18.6652
+
+
+q9:“grep '2019-05-12' 2019-05.csv | awk -F',' 'NR > 1 {print $17}' | sort -nr | head -n 1”, the highest is 460.04
+
+q10: “grep '2019-05-' 2019-05.csv | cut -d',' -f5,12 | grep -E '^.*,3|4|5|6|7|8|9' | cut -d',' -f2 | sort | uniq -c | sort -nr | head -10”, 2277903 0.0, 1460189 0.5, 1360161 2.5, 735071 3.0, 724106 1.0, 458083 3.5, 27501 4.5, 12056 7.0,  4156 -0.5,  1207 -1.0
+
+
+
+
+
+
+
+
+)
