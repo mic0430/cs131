@@ -2,11 +2,12 @@
 
 # Display usage information
 usage() {
-    echo "Usage: a2shell.sh [option] [arguments]"
+    echo "Usage: a2shellscript.sh [option] [arguments]"
     echo "Options:"
     echo "  -l [file]                  Count the lines in the file."
     echo "  -s [file]                  File (word count, line count, character count,number count)."
     echo "  -a [file]                  Count the number in the file."
+    echo "  -p [file]                  Print the contents of the file."
     exit 1
 }
 # Check if at least one argument is provided
@@ -62,6 +63,19 @@ case $1 in
         fi
         echo "Number count  in $file:"
         grep -o '[0-9]' "$file" | wc -l
+        ;;
+    -p)
+        if [ -z "$2" ]; then
+            echo "Please provide a file."
+            usage
+        fi
+        file=$2
+        if [ ! -f "$file" ]; then
+            echo "File not found!"
+            exit 1
+        fi
+        echo "Contents of $file:"
+        cat "$file"
         ;;
     *)
         usage
