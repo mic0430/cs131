@@ -10,14 +10,16 @@ usage() {
     echo "  -p [file]                  Print the contents of the file."
     exit 1
 }
-# Check if at least one argument is provided
+
 if [ $# -lt 1 ]; then
     usage
 fi
 
 # Parse the option and perform the corresponding action
 case $1 in
-    -l)
+    -l)#Count the number of lines in the file
+    #accept a file (will give 1 if not file is not found), use echo and wc command to count
+    #how many lines in there
         if [ -z "$2" ]; then
             echo "Please provide a file."
             usage
@@ -30,7 +32,10 @@ case $1 in
         echo "Number of lines in $file:"
         wc -l < "$file"
         ;;
-
+    
+    #combines the other two commands with 2 extra commands to summarize a file
+    # it will acept a file, then use the echo and wc commands to print out the information
+    # of the file, it includes word count, line count, character count, and number count.
     -s)
         if [ -z "$2" ]; then
             echo "Please provide a file."
@@ -51,6 +56,9 @@ case $1 in
         echo "Number  count:"
         grep -o '[0-9]' "$file" | wc -l
         ;;
+    #Count the digitals in a file
+    #similar to -i, it accepts a file, use the eho and grep -o '[0-9]' command to 
+    #count how many digitals are there 
     -a)
         if [ -z "$2" ]; then
             echo "Please provide a file."
@@ -64,6 +72,7 @@ case $1 in
         echo "Number count  in $file:"
         grep -o '[0-9]' "$file" | wc -l
         ;;
+    # print out the content of the file
     -p)
         if [ -z "$2" ]; then
             echo "Please provide a file."
