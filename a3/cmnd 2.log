@@ -1,0 +1,27 @@
+Question 0:
+Command: cat /etc/passwd
+
+--------------------------------------------------------
+Question 1:
+Command:sed -n '/^1.0,/p' 2019-10.csv > vendor2.csv
+wc vendor2.csv
+
+-------------------------------------------------------
+Question 2:
+Command: sed 's/[:"-]//g' 2019-10.csv > no-separators.csv
+
+head -10 no-separators.csv
+
+----------------------------------------------------------------------------------
+Question 3:
+Command:sed 's/.[0-9]*//g' no-separators.csv > no-fractions.csv
+
+head -10 no-fractions.csv
+
+----------------------------------------------------------------------------------
+Question 4:
+Command:awk -F, '$17 >= 10 {tips[$14]++} END {for (tip in tips) print tip, tips[tip]}' 2019-10.csv > results.txt
+
+----------------------------------------------------------------------------------
+Question 5:
+Command: sort -t' ' -k2,2nr results.txt | head -5
